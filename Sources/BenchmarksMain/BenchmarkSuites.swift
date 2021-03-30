@@ -11,6 +11,9 @@ public let suites = [
     vectorEquatableSuite
 ]
 
-public func runBenchmarks() {
-    runTests(suites: suites)
+@main
+public struct Suites {
+    static func main() {
+        Benchmark.main(suites)
+    }
 }
